@@ -1,0 +1,62 @@
+.header {
+  height: 100vh;
+  background-image: linear-gradient(
+    to right bottom, 
+    rgba($color-primary-light, 0.8), 
+    rgba($color-primary-dark, 0.8)), 
+    url(../img/CI_small.jpg);
+  background-size: cover;
+  background-position: top;
+  -webkit-clip-path: polygon(100% 0, 100% 95%, 50% 100%, 0 95%, 0 0);
+  clip-path: polygon(100% 0, 100% 95%, 50% 100%, 0 95%, 0 0);
+
+  @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+  -webkit-clip-path: polygon(100% 0, 100% 95%, 50% 100%, 0 95%, 0 0);
+  clip-path: polygon(100% 0, 100% 95%, 50% 100%, 0 95%, 0 0);
+  height: 95vh;
+  }
+
+  @media (min-resolution: 192dpi) and (min-width: 37.5em), (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), (min-width: 125em) {
+    background-image: linear-gradient(
+      to right bottom, 
+      rgba($color-primary-light, 0.8), 
+      rgba($color-primary-dark, 0.8)), 
+      url(../img/CI_big.jpg);
+  }
+
+  @include respond(phone) {
+    -webkit-clip-path: polygon(100% 0, 100% 95%, 50% 100%, 0 95%, 0 0);
+    clip-path: polygon(100% 0, 100% 95%, 50% 100%, 0 95%, 0 0);
+  }
+
+  &__logo-box {
+    position: absolute;
+    top:5rem;
+    left: 5rem;
+
+    animation-name: fadeIn;
+    animation-duration: 1s;
+
+    @include respond(tab-port) {
+    top:4rem;
+    left: 4rem;
+    }
+
+    @include respond(phone) {
+      top:4rem;
+      left: 3rem;
+      }
+  }
+
+  &__logo {
+    height: 8rem;
+  }
+  
+  &__text-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+}

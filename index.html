@@ -1,0 +1,488 @@
+<?php session_start(); ?>
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="description" content="Boost  your business profile with an amazing website">
+        <meta name="keywords" content="Web development & design">
+        <meta name="author" content="CODING IMAGES">
+        
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+        <link rel="stylesheet" href="css/icon-font.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="shortcut icon" type="image/png" href="img/CI_logo_small.png">
+        <link rel="stylesheet" href="css/myBtn.css">
+
+        <title>Coding Images | Boost your business</title>
+    </head>
+
+    <body>
+        <div class="navigation"> 
+            
+            <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+            
+            <label for="navi-toggle" class="navigation__button">
+                <span class="navigation__icon"></span>
+            </label>
+            
+            <div class="navigation__background">&nbsp;</div>
+
+            <nav class="navigation__nav">
+                <ul class="navigation__list">
+                    <li class="navigation__item"><a href="#section-about" class="navigation__link"><span>01</span>About</a></li>
+                    <li class="navigation__item"><a href="#section-features" class="navigation__link"><span>02</span>Benefits</a></li>
+                    <li class="navigation__item"><a href="#section-tours" class="navigation__link"><span>03</span>Pricing</a></li>
+                    <li class="navigation__item"><a href="#section-stories" class="navigation__link"><span>04</span>Testimonials</a></li>
+                    <li class="navigation__item"><a href="#section-contact" class="navigation__link"><span>05</span>Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <header class="header">
+            <div class="header__logo-box">
+                <img src="img/CI_logo_small.png" alt="Natours" class="header__logo">
+            </div>
+        </header>
+        
+        <div class="header__text-box">
+            <h1 class="heading-primary">
+                <span class="heading-primary--main">Coding Images</span>
+                <span class="heading-primary--sub txt-type" data-wait="3000" data-words='["Web Development", "Design", "Video"]'></span>
+            </h1>
+
+            <a href="#section-tours" class="btn btn--white btn--animated">Discover our services</a>  
+        </div>
+
+        <main>
+            <section class= "section-about" id="section-about">
+                <div class="u-center-text u-margin-bottom-big">
+                    <h2 class="heading-secondary">
+                        Beautiful Designs To Boost Your Business
+                    </h2>
+                </div>
+
+                <div class="row">
+                                   
+                    <div class="col-1-of-2">
+                        <h3 class="heading-tertiary u-margin-bottom-small">You are going to fall in love with my designs</h3>
+                        <p class="paragraph">I have one main rule, your website has to look amazing, nothing less.  Visual design and user experience is a plus to engage customers into your business.</p>
+
+                        <h3 class="heading-tertiary u-margin-bottom-small">From Landing Pages to Blogs to online Stores</h3>
+                        <p class="paragraph">A beautiful website is necessary for anybody who wants to stay competitive in any business market.  Contact me for advise and let me help you with that!  </p>
+
+                        <a href="#section-contact" class="btn-text">Contact Me &rarr;</a>
+                    </div>
+
+                    <div class="col-1-of-2">
+                        <div class="composition">
+                            <img srcset="img/CI_1.png 300w, img/CI_1-large.png 1000w" sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px" alt="Photo 1" class = "composition__photo composition__photo--p1" src = "img/CI_1-large.png">
+
+                            <img srcset="img/CI_2.png 300w, img/CI_2-large.png 1000w" sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px" alt="Photo 2" class = "composition__photo composition__photo--p2" src = "img/CI_2-large.png">
+
+                            <img srcset="img/CI_3.png 300w, img/CI_3-large.png 1000w" sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px" alt="Photo 3" class = "composition__photo composition__photo--p3" src = "img/CI_3-large.png">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section-features" id="section-features">
+                    <div class="u-center-text u-margin-bottom-big">
+                            <h2 class="heading-secondary_v2">
+                                Here are your benefits
+                            </h2>
+                        </div>
+                <div class="row">
+                    <div class="col-1-of-4">
+                        <div class="feature-box">
+                            <i class="feature-box__icon icon-basic-world"></i>
+                            <h3 class="heading-tertiary u-margin-bottom-small">Go World Wide</h3>
+                            <p class="feature-box__text">
+                                Having a great website comes with the power of reachability, meaning that your buyer persona can come from anywhere. 
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-1-of-4">
+                        <div class="feature-box">
+                            <i class="feature-box__icon icon-basic-heart"></i>
+                            <h3 class="heading-tertiary u-margin-bottom-small">Love Quality</h3>
+                            <p class="feature-box__text">
+                                Fully optimized website means fast loading time, a modern, super beautiful design and layout that adapt to any screen size and more. 
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-1-of-4">
+                        <div class="feature-box">
+                            <i class="feature-box__icon icon-basic-clock"></i>
+                            <h3 class="heading-tertiary u-margin-bottom-small">Save Time</h3>
+                            <p class="feature-box__text">
+                                Have your customers coming to your website and if they find out is what they are looking for, they will be 100% ready to buy.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-1-of-4">
+                        <div class="feature-box">
+                            <i class="feature-box__icon icon-basic-server"></i>
+                            <h3 class="heading-tertiary u-margin-bottom-small">One time payment</h3>
+                            <p class="feature-box__text">
+                                Get rid of monthly payments that make you spend endless money over time.  Ask for our one time payment, all included service.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <section class="section-tours" id="section-tours">
+                <div class="u-center-text u-margin-bottom-big">
+                    <h2 class="heading-secondary_v3">
+                        We can start here
+                    </h2>
+                </div>
+
+                <div class="row">
+                    <div class="col-1-of-3">
+                        <div class="card">
+                            <div class="card__side card__side--front">
+                                <div class="card__picture card__picture--1">
+                                    &nbsp;
+                                </div>
+                                <div class="card__heading">
+                                    
+                                    <h4><span class="card__heading-span card__heading-span--1">Websites</span></h4>
+                                </div>
+                                <div class="card__details">
+                                    <ul>
+                                        <li>One Time Payment*</li>
+                                        <li>Mock up to HTML / CSS</li>
+                                        <li>Responsive</li>
+                                        <li>Pages as you need</li>
+                                        <li>Optimized</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card__side card__side--back card__side--back--1">
+                                <div class="card__cta">
+                                    <div class="card__price-box">
+                                        <p class="card__price-only">
+                                            Starting
+                                        </p>
+                                        <p class="card__price-value">
+                                            $295
+                                        </p>
+                                    </div>
+                                    <a href="#popup-1" class="btn btn--white">Contact now!</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-1-of-3">
+                            <div class="card">
+                                <div class="card__side card__side--front">
+                                    <div class="card__picture card__picture--2">
+                                                &nbsp;
+                                    </div>
+                                    <div class="card__heading">
+                                        <h4><span class="card__heading-span card__heading-span--2">Blog & Stores</span></h4>
+                                        </div>
+                                        <div class="card__details">
+                                                <ul>
+                                                    <li>One Time Payment*</li>
+                                                    <li>SSL Security</li>
+                                                    <li>Unlimited Items / Posts</li>
+                                                    <li>Administration panel</li>
+                                                    <li>Responsive</li>
+                                                </ul>
+                                            </div>
+                                </div>
+                                <div class="card__side card__side--back card__side--back--2">
+                                        <div class="card__cta">
+                                                <div class="card__price-box">
+                                                    <p class="card__price-only">
+                                                        Starting
+                                                    </p>
+                                                    <p class="card__price-value">
+                                                        $495
+                                                    </p>
+                                                </div>
+                                                <a href="#popup-2" class="btn btn--white">Contact now!</a>
+                                            </div>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="col-1-of-3">
+                            <div class="card">
+                                <div class="card__side card__side--front">
+                                    <div class="card__picture card__picture--3">
+                                                &nbsp;
+                                    </div>
+                                    <div class="card__heading">
+                                        <h4><span class="card__heading-span card__heading-span--3">Designs</span></h4>
+                                    </div>
+                                    <div class="card__details">
+                                            <ul>
+                                                <li>Websites</li>
+                                                <li>Logos</li>
+                                                <li>Brochures</li>
+                                                <li>Banners</li>
+                                                <li>Business Cards</li>
+                                            </ul>
+                                        </div>
+                                </div>
+                                <div class="card__side card__side--back card__side--back--3">
+                                        <div class="card__cta">
+                                                <div class="card__price-box">
+                                                    <p class="card__price-only">
+                                                        Starting
+                                                    </p>
+                                                    <p class="card__price-value">
+                                                        $75
+                                                    </p>
+                                                </div>
+                                                <a href="#popup-3" class="btn btn--white">Contact now!</a>
+                                            </div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+                <div class="u-center-text u-margin-top-huge">
+                    <a href="#section-contact" class="btn btn--green">Contact now</a>
+                </div>
+            </section>
+
+            <section class="section-stories" id="section-stories">
+                <div class="bg-video">
+                    <video class="bg-video__content" autoplay muted loop>
+                        <source src="img/CI_video.mp4" type="video/mp4">
+                        <!-- <source src="img/CI_video.webm" type="video/webm"> -->
+                            Your browser is no supported
+                    </video>
+                </div>
+
+                <div class="u-center-text u-margin-bottom-big">
+                    <h2 class="heading-secondary_v2">
+                        I want to impress you
+                    </h2>
+                </div>
+                    <div class="row">
+                        <div class="story">
+                            <figure class="story__shape">
+                                <img src="img/santiempleo.jpg" alt="person on a tour" class="story__img">
+                                <figcaption class="story__caption">Santi Empleo</figcaption>
+                            </figure>
+                            <div class="story__text">
+                                <h3 class="heading-tertiary u-margin-bottom-small">
+                                    Coding Images really helped me
+                                </h3>
+                                <p class="paragraph__story">As a hiring agency owner this website made everything a lot easier, potential employees come to me already oriented and knowing what they want.  This guy helped me reach everything advertised.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="story">
+                            <figure class="story__shape">
+                                <img src="img/itl.jpeg" alt="person on a tour" class="story__img">
+                                <figcaption class="story__caption">Bible Institute</figcaption>
+                            </figure>
+                            <div class="story__text">
+                                <h3 class="heading-tertiary u-margin-bottom-small">
+                                    As good as it can get
+                                </h3>
+                                <p class = "paragraph__story">As a buisiness owner I was reluctant to do this, but after some advise from Coding Images I decided to do it and I don't regret.  Communication, orientation and everything related to our customers is a lot easier through a website.</p>
+                            </div>
+                        </div>
+                    </div>
+            </section>
+
+            <section class="section-book" id="section-contact">
+                <div class="row">
+                    <div class="book">
+                        <div class="book__form">
+                    <div class="text-center">
+                        <?php
+                                
+                                if(isset($_SESSION['msg'])){
+                                    echo $_SESSION['msg'];
+                                    unset($_SESSION['msg']);
+                                } else if(isset($_SESSION['msgFields'])){
+                                    echo $_SESSION['msgFields'];
+                                    unset($_SESSION['msgFields']);
+                                }
+                                
+                        ?>
+                    </div>
+                    <form action="SendGrid-API/f_process.php" method="post" class = "form">
+                                <div class="u-margin-bottom-medium">
+                                    <h2 class="heading-secondary">
+                                        Contact me now
+                                    </h2>
+                                </div>
+                                
+                                <div class="form__group">
+                                    <input type="text" name="name" class="form__input" placeholder="Full name" id = "name" required>
+                                    <label for = "name" class ="form__label">Full name</label>
+                                </div>
+
+                                <div class="form__group">
+                                    <input type="text" name="email" class="form__input" placeholder="Email address" id = "email" required>
+                                    <label for = "email" class ="form__label">Email</label>
+                                </div>
+
+
+                                <div class="form__group u-margin-bottom-medium">
+
+                                    <div class="form__radio-group">
+                                        <input type="radio" name="webDesign" class="form__radio-input" id="webDesign" >
+                                        <label for="webDesign" class="form__radio-label">
+                                        <span class="form__radio-button"></span>Web Development</label>
+                                    </div>
+
+                                    <div class="form__radio-group">
+                                        <input type="radio" name="design" class="form__radio-input" id="design" >
+                                        <label for="design" class="form__radio-label">
+                                        <span class="form__radio-button"></span>Design</label>
+                                    </div>
+
+                                </div>
+
+
+                                <div class="form__group">
+                                    <button type = "submit" class="btn btn--green">
+                                        Submit &rarr;
+                                    </button>
+                                </div>
+
+
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class = "footer">
+            <div class="footer__logo-box">
+                <picture>
+                    <source srcset = "img/CI_logo_tiny-1x.png 1x, img/CI_logo_tiny-2x.png 2x" media="(max-width: 37.5em)">
+                    <img srcset="img/CI_logo_small-1x.png 1x, img/logo-small-2x.png 2x" alt="Full logo" src="img/logo-green-2x.png">
+                </picture>
+            </div>
+            <div class="row">
+                <div class="col-1-of-2">
+                    <div class="footer__navigation">
+                        <ul class="footer__list">
+                            <li class="footer__item"><a href="#section-about" class="footer__link">About</a></li>
+                            <li class="footer__item"><a href="#section-features" class="footer__link">Benefits</a></li>
+                            <li class="footer__item"><a href="#section-tours" class="footer__link">Pricing</a></li>
+                            <li class="footer__item"><a href="#section-stories" class="footer__link">Testimonials</a></li>
+                            <li class="footer__item"><a href="#section-contact" class="footer__link">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-1-of-2">
+                    <p class="footer__copyright">
+                        This <a href="#" class="footer__link">Coding Images</a> website credit the pictures from Pexels, Unsplash and was also inspired from the online course <a href="#" class="footer__link"> Advanced CSS and Sass</a>. Copyright &copy; by Coding Images.
+                    </p>
+                </div>
+            </div>
+        </footer>
+
+
+        <div class="popup" id="popup-1">
+            <div class="popup__content">
+                <div class="popup__left">
+                    <img class = "popup__img popup__img-1" src="img/CI_pop-1.jpeg" alt="tour">
+                    <img class = "popup__img popup__img-2" src="img/CI_pop-2.jpeg" alt="tour">
+                </div>
+                <div class="popup__right">
+                    <a href="#section-tours" class="popup__close">&times;</a>
+                    <h2 class="heading-secondary u-margin-bottom-small">Web Development</h2>
+                    <h3 class="heading-tertiary u-margin-bottom-small">I will develop an engaging an beautiful website</h3>
+                    <p class="popup__text">
+
+                        Nowadays every single business is transitioning and increasing their presence in the internet and no wonder why!  In a brief, I want to breakdown the main benefits of having a website, starting with availability, your customers will be able to reach your services while you are sleeping, getting oriented about what are you offering to them, unless you want to let the competency do it for you and therefore take your customers away.  A website also gives you credibility and make everything easy for everybody.  Nowadays people is spending a lot of time browsing the internet and seeing advertising every single minute, so a website is also a great way to advertise your business amongst other great benefits. 
+                    </p>
+                    <a href="#section-contact" class="btn btn--green">Request info</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="popup" id="popup-2">
+            <div class="popup__content">
+                <div class="popup__left">
+                    <img class = "popup__img popup__img-1" src="img/CI_pop-3.jpeg" alt="tour">
+                    <img class = "popup__img popup__img-2" src="img/CI_pop-4.jpeg" alt="tour">
+                </div>
+                <div class="popup__right">
+                    <a href="#section-tours" class="popup__close">&times;</a>
+                    <h2 class="heading-secondary u-margin-bottom-small">Blog & Online Stores</h2>
+                    <h3 class="heading-tertiary u-margin-bottom-small">Develop your blog and or online store</h3>
+                    <p class="popup__text">
+
+                        The world business is transitioning to the internet, it is secured, it's safer and it's time efficient.  If you are planning to set up a blog or an online store I can help you do that.  The same benefits that applies to websites apply to blog and stores, people can reach your content or products any time since they are available 24/7.  If you want to give a message or have products to sell don't think twice about building up your business online.  I can help you do that and more.  Just contact me and I will be back to you to help you out reach your goals starting with the right foot. 
+
+                    </p>
+                    <a href="#" class="btn btn--green">Request Info</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="popup" id="popup-3">
+            <div class="popup__content">
+                <div class="popup__left">
+                    <img class = "popup__img popup__img-1" src="img/CI_pop-5.jpeg" alt="tour">
+                    <img class = "popup__img popup__img-2" src="img/CI_pop-6.jpeg" alt="tour">
+                </div>
+                <div class="popup__right">
+                    <a href="#section-tours" class="popup__close">&times;</a>
+                    <h2 class="heading-secondary u-margin-bottom-small">Graphic Design</h2>
+                    <h3 class="heading-tertiary u-margin-bottom-small">Have an idea about graphic design, I can help!</h3>
+                    <p class="popup__text">
+
+                        Think that graphic design is not so important as functionalities, think again!  Visual design is one of the main factors to attract customers and even more to engage them.  Most of the websites need an improvement in that regard.  I can help you with your graphic design needs, either is a website, a logo, brochures, banners, business cards, you name it!  As a creator I am always developing ideas and concepts to enhance the visual experience of my customers with a promise of 100% satisfaction. 
+                    </p>
+                    <a href="#" class="btn btn--green">Request info</a>
+                </div>
+            </div>
+        </div>
+
+
+        <script src="main.js"></script>
+
+    <!-- back to top button -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script>
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () {
+          scrollFunction()
+        };
+    
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            document.getElementById("myBtn").style.display = "block";
+          } else {
+            document.getElementById("myBtn").style.display = "none";
+          }
+        }
+    
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+    </script>
+    <!-- back to top button ends -->
+        
+    </body>
+</html>
