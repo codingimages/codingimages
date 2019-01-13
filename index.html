@@ -34,11 +34,17 @@
 
             <nav class="navigation__nav">
                 <ul class="navigation__list">
-                    <li class="navigation__item"><a href="#section-about" class="navigation__link"><span>01</span>About</a></li>
-                    <li class="navigation__item"><a href="#section-features" class="navigation__link"><span>02</span>Benefits</a></li>
-                    <li class="navigation__item"><a href="#section-tours" class="navigation__link"><span>03</span>Pricing</a></li>
-                    <li class="navigation__item"><a href="#section-stories" class="navigation__link"><span>04</span>Testimonials</a></li>
-                    <li class="navigation__item"><a href="#section-contact" class="navigation__link"><span>05</span>Contact</a></li>
+
+                    <li class="navigation__item"><a href="#section-about" class="about navigation__link"><span>01</span>About</a></li>
+
+                    <li class="navigation__item"><a href="#section-features" class="features navigation__link"><span>02</span>Benefits</a></li>
+
+                    <li class="navigation__item"><a href="#section-tours" class="pricing navigation__link"><span>03</span>Pricing</a></li>
+
+                    <li class="navigation__item"><a href="#section-stories" class="stories navigation__link"><span>04</span>Testimonials</a></li>
+
+                    <li class="navigation__item"><a href="#section-contact" class="contact navigation__link"><span>05</span>Contact</a></li>
+
                 </ul>
             </nav>
         </div>
@@ -55,7 +61,7 @@
                 <span class="heading-primary--sub txt-type" data-wait="3000" data-words='["Web Development", "Design", "Video"]'></span>
             </h1>
 
-            <a href="#section-tours" class="btn btn--white btn--animated">Discover our services</a>  
+            <a href="#section-tours" class="pricing btn btn--white btn--animated">Discover our services</a>  
         </div>
 
         <main>
@@ -75,7 +81,7 @@
                         <h3 class="heading-tertiary u-margin-bottom-small">From Landing Pages to Blogs to online Stores</h3>
                         <p class="paragraph">A beautiful website is necessary for anybody who wants to stay competitive in any business market.  Contact me for advise and let me help you with that!  </p>
 
-                        <a href="#section-contact" class="btn-text">Contact Me &rarr;</a>
+                        <a href="#section-contact" class="contact btn-text">Contact Me &rarr;</a>
                     </div>
 
                     <div class="col-1-of-2">
@@ -178,7 +184,7 @@
                                             $295
                                         </p>
                                     </div>
-                                    <a href="#popup-1" class="btn btn--white">Contact now!</a>
+                                    <a href="#popup-1" class="btn btn--white">Learn More</a>
                                 </div>
                             </div>
                         </div>
@@ -212,7 +218,7 @@
                                                         $495
                                                     </p>
                                                 </div>
-                                                <a href="#popup-2" class="btn btn--white">Contact now!</a>
+                                                <a href="#popup-2" class="btn btn--white">Learn More</a>
                                             </div>
                                 </div>
                             </div>
@@ -246,14 +252,14 @@
                                                         $75
                                                     </p>
                                                 </div>
-                                                <a href="#popup-3" class="btn btn--white">Contact now!</a>
+                                                <a href="#popup-3" class="btn btn--white">Learn More</a>
                                             </div>
                                 </div>
                             </div>
                     </div>
                 </div>
                 <div class="u-center-text u-margin-top-huge">
-                    <a href="#section-contact" class="btn btn--green">Contact now</a>
+                    <a href="#section-contact" class="contact btn btn--green">Contact now</a>
                 </div>
             </section>
 
@@ -355,7 +361,7 @@
 
 
                                 <div class="form__group">
-                                    <button type = "submit" class="btn btn--green">
+                                    <button type = "submit" class="contact btn btn--green">
                                         Submit &rarr;
                                     </button>
                                 </div>
@@ -379,11 +385,11 @@
                 <div class="col-1-of-2">
                     <div class="footer__navigation">
                         <ul class="footer__list">
-                            <li class="footer__item"><a href="#section-about" class="footer__link">About</a></li>
-                            <li class="footer__item"><a href="#section-features" class="footer__link">Benefits</a></li>
-                            <li class="footer__item"><a href="#section-tours" class="footer__link">Pricing</a></li>
-                            <li class="footer__item"><a href="#section-stories" class="footer__link">Testimonials</a></li>
-                            <li class="footer__item"><a href="#section-contact" class="footer__link">Contact</a></li>
+                            <li class="footer__item"><a href="#section-about" class="about footer__link">About</a></li>
+                            <li class="footer__item"><a href="#section-features" class="features footer__link">Benefits</a></li>
+                            <li class="footer__item"><a href="#section-tours" class="pricing footer__link">Pricing</a></li>
+                            <li class="footer__item"><a href="#section-stories" class="stories footer__link">Testimonials</a></li>
+                            <li class="footer__item"><a href="#section-contact" class="contact footer__link">Contact</a></li>
                         </ul>
                     </div>
                 </div>
@@ -454,35 +460,13 @@
             </div>
         </div>
 
-
-        <script src="main.js"></script>
-
-    <!-- back to top button -->
-    <button onclick="topFunction()" id="myBtn" title="Go to top">
-        <i class="fas fa-arrow-up"></i>
-    </button>
-
-    <script>
-        // When the user scrolls down 20px from the top of the document, show the button
-        window.onscroll = function () {
-          scrollFunction()
-        };
-    
-        function scrollFunction() {
-          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-            document.getElementById("myBtn").style.display = "block";
-          } else {
-            document.getElementById("myBtn").style.display = "none";
-          }
-        }
-    
-        // When the user clicks on the button, scroll to the top of the document
-        function topFunction() {
-          document.body.scrollTop = 0;
-          document.documentElement.scrollTop = 0;
-        }
+    <!-- JQuery CDN -->
+    <script
+        src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="crossorigin="anonymous">
     </script>
-    <!-- back to top button ends -->
+
+    <script src="typeWriter.js"></script>
+    <script src="scrollTo.js"></script>
         
     </body>
 </html>

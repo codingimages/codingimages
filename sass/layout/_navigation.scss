@@ -33,7 +33,6 @@
     position: fixed;
     top: 6.5rem;
     right: 6.5rem;
-    // background-image: radial-gradient($color-primary-light, $color-primary-dark);
     background-image: radial-gradient(rgba($color-primary-light, 0.9), rgba($color-primary-dark, 0.9));    
     z-index: 100;
     box-shadow: 0 1rem 3rem rgba($color-black, .1);
@@ -67,7 +66,6 @@
     list-style: none;
     text-align: center;
     width: 100%;
-    transition: all 0.5;
   }
 
   &__item {
