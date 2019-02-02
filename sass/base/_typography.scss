@@ -130,6 +130,33 @@ body {
   }
 }
 
+.heading-secondary_v4 {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  background-image: linear-gradient(to right, $color-yellow, $color-orange);
+  display: inline-block;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  letter-spacing: 2px;
+  transition: all .2s;
+
+  @include respond(tab-port) {
+    font-size: 3rem;
+  }
+
+  @include respond(phone) {
+    font-size: 2.25rem;
+  }
+
+
+  &:hover {
+    transform: skewY(2deg) skewX(15deg) scale(1.1);
+    text-shadow: .5rem 1rem 2rem rgba($color-black, .2);
+  }
+}
+
 .heading-tertiary {
   font-size: $default-font-size;
   font-weight: 700;
@@ -137,6 +164,15 @@ body {
   line-height: 2rem;
   letter-spacing: 1px;
   color: $color-black;
+
+  &__white {
+    font-size: $default-font-size;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 2rem;
+    letter-spacing: 1px;
+    color: $color-white;
+  }
 }
 
 .paragraph { 
@@ -146,6 +182,12 @@ body {
 
   &:not(:last-child) {
     margin-bottom: 3rem;
+  }
+
+  &__white {
+    font-size: $default-font-size;
+    line-height: 2rem;
+    color: $color-white;
   }
 }
 

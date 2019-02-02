@@ -104,4 +104,85 @@
   }
 }
 
+.btn-yellow {
+  &:link,
+  &:visited {
+    font-size: $default-font-size;
+    color: $color-orange;
+    display:inline-block;
+    text-decoration: none;
+    border-bottom: 1px solid $color-orange;
+    padding: 3px;
+    transition: all .2s;
+  }
+
+  &:hover {
+    background-color: $color-orange;
+    color: $color-white;
+    padding: 1rem 2rem;
+    border-radius: 15px;
+    box-shadow: 0 1rem 2rem rgba($color-black, .15);
+    transform: translateY(-2px);
+  }
+
+  &:active {
+    box-shadow: 0 .5rem 1rem rgba($color-black, .15);
+    transform: translateY(0px);
+  }
+}
+
 /* The link is a pseudo class*/
+
+.portfolioLink {
+  display: inline-block;
+  position: absolute;
+  z-index: 999;
+  left: 15%;
+  top: 9%;
+
+  &__btn {
+    &:link,
+    &:visited {
+      font-size: $default-font-size;
+      color: $color-white;
+      display:inline-block;
+      text-decoration: none;
+      border-bottom: 1px solid $color-white;
+      padding: 3px;
+      transition: all .2s;
+    }
+  
+    &:hover {
+      background-color: $color-primary;
+      color: $color-white;
+      padding: 1rem 2rem;
+      border-radius: 15px;
+      box-shadow: 0 1rem 2rem rgba($color-black, .15);
+      transform: translateY(-2px);
+    }
+  
+    &:active {
+      box-shadow: 0 .5rem 1rem rgba($color-black, .15);
+      transform: translateY(0px);
+    } 
+  }
+
+  @include respond(tab-land) {
+    left: 13%;
+    top: 8%;
+  }
+
+  @include respond(tab-port) {
+    left: 18%;
+    top: 7%;
+  }
+
+  @include respond(phone) {
+    left: 30%;
+    top: 10%;
+  }
+
+  @include respond(phone-story) {
+    left: 33%;
+  }
+}

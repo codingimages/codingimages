@@ -9,7 +9,7 @@
     width: 7rem;
     position: fixed;
     top: 6rem;
-    right: 6rem;
+    left: 6rem;
     border-radius: 50%;
     z-index: 200;
     text-align: center;
@@ -17,12 +17,12 @@
 
     @include respond(tab-port) {
       top: 4.5rem;
-      right: 4rem;
+      left: 4rem;
     }
 
     @include respond(phone) {
       top: 4.5rem;
-      right: 3rem;
+      left: 3rem;
     }
   }
 
@@ -32,7 +32,7 @@
     border-radius: 50%;
     position: fixed;
     top: 6.5rem;
-    right: 6.5rem;
+    left: 6.5rem;
     background-image: radial-gradient(rgba($color-primary-light, 0.9), rgba($color-primary-dark, 0.9));    
     z-index: 100;
     box-shadow: 0 1rem 3rem rgba($color-black, .1);
@@ -41,20 +41,20 @@
 
     @include respond(tab-port) {
       top: 5.5rem;
-      right: 4.5rem;
+      left: 4.5rem;
     }
 
     @include respond(phone) {
       top: 4.7rem;
-      right: 3.5rem;
+      left: 3.5rem;
     }
   }
 
   &__nav {
     height: 100vh;
     position:fixed;
-    top: 0; //this makes to expand the background from the top-right side 
-    right: 0;
+    top: 0; //this makes to expand the background from the top-left side 
+    left: 0;
     z-index: 150;
     opacity: 0;
     width: 0;
@@ -87,7 +87,7 @@
       transition: all .8s;
       
       span {
-        margin-right: 1rem;
+        margin-left: 1rem;
         display: inline-block;
       }
     }

@@ -149,6 +149,7 @@
   }
 
   &__close {
+
     &:link,
     &:visited {
       color: $color-grey-dark;
@@ -166,4 +167,8 @@
       color: $color-primary;
     }
   }
+}
+
+.fas.fa-times {
+  color: $color-primary;
 }
