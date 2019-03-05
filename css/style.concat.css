@@ -853,8 +853,6 @@ body {
   .portfolioLink__btn:active {
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
     transform: translateY(0px); }
-  .portfolioLink .fab {
-    margin-right: 1rem; }
   @media (max-width: 75em) {
     .portfolioLink {
       left: 13%;
@@ -1052,7 +1050,7 @@ body {
     transition: all .2s;
     outline-offset: 1rem; }
     .composition-2__photo:hover {
-      outline: 1rem solid #d62970;
+      outline: 0.5rem solid #d62970;
       transform: scale(1.05) translateY(-0.5rem);
       z-index: 20; }
     .composition-2__photo:hover .composition-2__photo__photo:not(:hover) {
@@ -1674,15 +1672,30 @@ body {
   bottom: .5rem; }
 
 .websites {
-  background-color: 255; }
+  width: 95%; }
   .websites__picture > img {
     display: block;
+    margin: 0 auto;
     width: 100%; }
+  .websites__picture {
+    transition: all .2s; }
+  .websites__picture:hover {
+    outline: 0.5rem solid #d62970;
+    transform: scale(1.05) translateY(-0.5rem); }
   .websites__button-1 {
     display: inline-block;
     margin-right: 2rem; }
   .websites__button-2 {
     display: inline-block; }
+  .websites__line {
+    background-color: #310668;
+    height: 3px;
+    width: 90%;
+    display: block;
+    margin: 0 auto; }
+
+.fab {
+  margin-right: 1rem; }
 
 .section-about {
   background-color: #f7f7f7;

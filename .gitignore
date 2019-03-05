@@ -3,3 +3,4 @@ node_modules
 picsToEdit
 sass
 SendGrid-API
+package-lock.json

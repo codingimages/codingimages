@@ -53,3 +53,25 @@ $('document').ready(function() {
     });
 });
 
+$('document').ready(function() {
+    $('a.skills').click(function(e) {
+        e.preventDefault(); 
+        var link = $(this).attr('href');
+        $('html, body').animate({
+            scrollTop: $(link).offset().top
+        }, 1000);
+        
+    });
+});
+
+$('document').ready(function() {
+    $('a.portfolio').click(function(e) {
+        e.preventDefault(); 
+        var link = $(this).attr('href');
+        $('html, body').animate({
+            scrollTop: $(link).offset().top
+        }, 1000);
+        
+    });
+});
+
